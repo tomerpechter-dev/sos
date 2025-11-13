@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="utf-8" />
     <title></title>
@@ -9,21 +9,33 @@
     <form>
         <label for="name">שם:</label>
         <input type="text" name="fullname" />
-        <br />
+        <br /><br />
         <label for="email">אימייל:</label>
-        <input id="email" name="email" type="email" />
-        <br />
+        <input id="email" name="email" type="email" required />
+        <br /><br />
         <label for="password">סיסמה:</label>
-        <input type="password" name="pwd" />
-        <br />
+        <input type="password" name="pwd" required />
+        <br /><br />
         <label for="age">גיל:</label>
         <input type="number" name="age" min="0" max="120" />
-        <br />
+        <br /><br />
         <label for="text">מין:</label>
         <label><input type="radio" name="gender" value="male"> זכר</label>
         <label><input type="radio" name="gender" value="female"> נקבה</label>
-        <br />
+        <br /><br />
         <label><input type="checkbox" name="subscribe">אני מסכים/ה לתנאים</label>
-        <label for="text">קורות חיים(PDF):</label>
+        <br /><br />
+        <label for="text">קורות חיים (PDF):</label>
         <input type="file" name="file" />
+        <br /><br />
+        <label for="color">צבע מועדף:</label>
+        <input type="color" name="favcolor" />
+        <br /><br />
+        <label for="message">קצת עלייך:</label>
+        <br />
+        <textarea name="message" rows="4" cols="20"></textarea>
+        <br /><br />
+        <input type="submit" value="שלח">
     </form>
+</body>
+</html>
